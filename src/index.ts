@@ -4,7 +4,7 @@ import "regenerator-runtime/runtime";
 
 import { utils } from './utils';
 
-let qwe: number | null = 12345;
+let qwe: number | null | string = 12345;
 qwe = null;
 
 function component() {
