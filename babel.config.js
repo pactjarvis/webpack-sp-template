@@ -8,7 +8,9 @@ module.exports = function (api) {
     const plugins = [ 
         '@babel/plugin-proposal-numeric-separator',
         '@babel/proposal-class-properties',
-        '@babel/proposal-object-rest-spread' 
+        '@babel/proposal-object-rest-spread',
+        '@babel/plugin-proposal-optional-chaining',
+        '@babel/plugin-proposal-nullish-coalescing-operator',
     ];
   
     return {

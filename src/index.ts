@@ -1,33 +1,15 @@
-import "core-js/features/promise";
-import 'whatwg-fetch';
-import "regenerator-runtime/runtime";
+import '@pnp/polyfill-ie11';
+import { sp } from '@pnp/sp';
+import { IResultGetItem } from "./helpers/interfaces";
 
-import { utils } from './utils';
+sp.setup({
+  sp: {
+    headers: {
+      'Accept': 'application/json; odata=verbose'
+    },
+    baseUrl: 'https://sharepoint/portalit/voronezh'
+  }
+});
 
-let qwe: number | null | string = 12345;
-qwe = null;
-
-function component() {
-  const element = document.createElement('div');
-  setInterval(() => {
-    element.innerHTML = `Hello webpack ${new Date()}`;
-  }, 1000)
-  return element;
-}
-
-document.body.appendChild(component());
-document.body.appendChild(component());
-document.body.appendChild(component());
-
-const p1 = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(utils.now());
-    }, 3000)
-  })
-}
-
-(async() => {
-  const val = await p1();
-  console.log(val);
-})();
+// @ts-ignore
+// const itemID = GetUrlKeyValue("ID");
