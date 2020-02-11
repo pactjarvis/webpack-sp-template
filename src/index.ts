@@ -1,15 +1,12 @@
-import '@pnp/polyfill-ie11';
-import { sp } from '@pnp/sp';
-import { IResultGetItem } from "./helpers/interfaces";
+import '@pnp/polyfill-ie11'
+import 'regenerator-runtime/runtime'
 
-sp.setup({
-  sp: {
-    headers: {
-      'Accept': 'application/json; odata=verbose'
-    },
-    baseUrl: 'https://sharepoint/portalit/voronezh'
-  }
-});
+(async () => {
 
-// @ts-ignore
-// const itemID = GetUrlKeyValue("ID");
+  const sleep = (ms: number) => new Promise((resolve) => { setTimeout(() => { resolve() }, ms) })
+  
+  await sleep(2000)
+
+  console.log(Date.now())
+
+})()
