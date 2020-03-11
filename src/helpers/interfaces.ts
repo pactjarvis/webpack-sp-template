@@ -1,17 +1,7 @@
 export interface IResultGetItem {
-  __metadata?: {
-    etag?: string;        /* ""198"" */
-    id?: string;          /* "Web/Lists(guid'584c9e3a-c745-4b43-99a4-5d7a2f5f601d')/Items(1)" */
-    type?: string;        /* "SP.Data.TestListItem" */
-    uri?: string;         /* "https://sharepoint/portalit/voronezh/_api/Web/Lists(guid'584c9e3a-c745-4b43-99a4-5d7a2f5f601d')/Items(1)" */
-  };
   Attachments?: boolean;  
   AuthorId?: number;      
   Author?: {
-    __metadata?: {
-      id?: string;        /* "f424226f-1146-41d9-b495-b5a0efa1df85" */
-      type?: string;      /* "SP.Data.UserInfoItem" */
-    };
     Id?: number;
     Name?: string;        /* "i:0#.w|sibur\username" */
     EMail?: string;
@@ -21,10 +11,6 @@ export interface IResultGetItem {
   Created?: string;       /* "2018-04-18T05:55:11Z" */
   EditorId?: number;      
   Editor?: {
-    __metadata?: {
-      id?: string;        /* "f424226f-1146-41d9-b495-b5a0efa1df85" */
-      type?: string;      /* "SP.Data.UserInfoItem" */
-    };
     Id?: number;
     Name?: string;        /* "i:0#.w|sibur\username" */
     EMail?: string;
