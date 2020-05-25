@@ -25,6 +25,7 @@
     "@babel/preset-typescript": "^7.9.0",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "sharepointplus-loader": "^1.1.3",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.43.0",
@@ -39,8 +40,11 @@
     "@pnp/sp": "^2.0.4",
     "core-js": "^3.6.4",
     "date-fns": "^2.9.0",
+    "es6-proxy-polyfill": "^2.0.1",
+    "harmony-reflect": "^1.6.1",
     "lodash": "^4.17.15",
     "regenerator-runtime": "^0.13.3",
+    "sharepointplus": "^6.1.1",
     "whatwg-fetch": "^3.0.0"
   }
 }
